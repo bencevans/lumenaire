@@ -13,7 +13,6 @@ app.on('ready', function (){
   appIcon = new Tray(iconPath);
   var contextMenu = Menu.buildFromTemplate([
     {
-      icon: iconPath,
       label: 'Links',
       submenu: [
         { label: 'Website / GitHub' },
