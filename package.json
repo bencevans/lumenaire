@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron main.js",
-    "package-linux": "electron-packager ./ Lumenaire --platform=linux --arch=x64 --out=build"
+    "package-linux": "electron-packager ./ Lumenaire --platform=linux --arch=x64 --out=build",
+    "package-windows": "electron-packager ./ Lumenaire --platform=windows --arch=x64 --out=build",
+    "package-osx": "electron-packager ./ Lumenaire --platform=osx --arch=x64 --out=build"
   },
   "repository": {
     "type": "git",
