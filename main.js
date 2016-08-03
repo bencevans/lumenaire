@@ -13,26 +13,11 @@ app.on('ready', function (){
   appIcon = new Tray(iconPath);
   var contextMenu = Menu.buildFromTemplate([
     {
-      label: 'Enabled',
-      type: 'radio',
       icon: iconPath,
-      checked: false,
-      click: function (item) {
-        if (item.checked) {
-          item.checked = false
-          console.log('was checked')
-        } else {
-          item.checked = true
-          console.log('now checked')
-        }
-        console.log(arguments)
-      }
-    },
-    {
       label: 'Links',
       submenu: [
-        { label: 'GitHub' },
-        { label: 'Issues' }
+        { label: 'Website / GitHub' },
+        { label: 'Discussion & Issues' }
       ]
     },
     { label: 'Quit',
@@ -40,6 +25,5 @@ app.on('ready', function (){
       selector: 'terminate:',
     }
   ]);
-  appIcon.setToolTip('This is my application.');
   appIcon.setContextMenu(contextMenu);
 });
