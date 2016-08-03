@@ -4,7 +4,8 @@
   "description": "Automagically adjust screen brightness to screen content",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron main.js"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
   "homepage": "https://github.com/bencevans/lumenaire#readme",
   "dependencies": {
     "brightness": "^3.0.0",
+    "electron-prebuilt": "^1.3.2",
     "pify": "^2.3.0",
     "pixel-average": "^1.0.0",
     "screenshot-desktop": "^1.0.0"
