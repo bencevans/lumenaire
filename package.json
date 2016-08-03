@@ -2,10 +2,11 @@
   "name": "lumenaire",
   "version": "0.0.0",
   "description": "Automagically adjust screen brightness to screen content",
-  "main": "app.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron main.js"
+    "start": "electron main.js",
+    "package-linux": "electron-packager ./ Lumenaire --platform=linux --arch=x64 --out=build"
   },
   "repository": {
     "type": "git",
@@ -33,5 +34,8 @@
     "pify": "^2.3.0",
     "pixel-average": "^1.0.0",
     "screenshot-desktop": "^1.0.0"
+  },
+  "devDependencies": {
+    "electron-packager": "^7.4.0"
   }
 }
