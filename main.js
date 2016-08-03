@@ -2,6 +2,7 @@ const {app, Tray, Menu, BrowserWindow} = require('electron');
 const path = require('path');
 const brightness = require('./app')
 const iconPath = path.join(__dirname, 'logo.png');
+const open = require('open')
 let appIcon = null;
 let win = null;
 
@@ -15,8 +16,18 @@ app.on('ready', function (){
     {
       label: 'Links',
       submenu: [
-        { label: 'Website / GitHub' },
-        { label: 'Discussion & Issues' }
+        {
+          label: 'Website / GitHub',
+          click: () => {
+            open('https://github.com/bencevans/lumenaire')
+          }
+        },
+        {
+          label: 'Discussion / Issues',
+          click: () => {
+            open('https://github.com/bencevans/lumenaire/issues')
+          }
+        }
       ]
     },
     { label: 'Quit',
