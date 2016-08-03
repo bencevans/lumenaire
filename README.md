@@ -6,7 +6,7 @@
 
 <h4 align="center">The automatic screen brightness tool. For Mac, Windows, and Linux.</h4>
 
-Lumenaire is cross platform implementation of [Lumen](https://github.com/anishathalye/lumen).
+<p align="center">Lumenaire is a cross platform implementation of [Lumen](https://github.com/anishathalye/lumen).</p>
 
 ## Development
 
