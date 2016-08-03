@@ -2,6 +2,14 @@ const screenshot = require('screenshot-desktop')
 const pify = require('pify')
 const pixelAverage = require('pixel-average')
 const brightness = require('brightness')
+const ActiveAppWatcher = require('active-app-watcher')
+const activeAppWatcher = new ActiveAppWatcher()
+
+activeAppWatcher.on('change', (a) => {
+  updateBrightness()
+})
+
+activeAppWatcher.start()
 
 function updateBrightness() {
   screenshot()
@@ -21,4 +29,4 @@ function updateBrightness() {
   })
 }
 
-setInterval(updateBrightness, 500)
+// setInterval(updateBrightness, 500)

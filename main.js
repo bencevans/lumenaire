@@ -5,7 +5,10 @@ const iconPath = path.join(__dirname, 'logo.png');
 let appIcon = null;
 let win = null;
 
-app.on('ready', function(){
+const activeWin = require('active-win')
+
+
+app.on('ready', function (){
   win = new BrowserWindow({show: false});
   appIcon = new Tray(iconPath);
   var contextMenu = Menu.buildFromTemplate([
