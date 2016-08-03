@@ -25,4 +25,4 @@ $ npm run package-linux
 
 ## Licence
 
-MIT &copy [Ben Evans](https://bencevans.io)
+MIT &copy; [Ben Evans](https://bencevans.io)
