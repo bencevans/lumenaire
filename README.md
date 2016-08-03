@@ -1,6 +1,6 @@
 
 <h1 align="center">
-  <a href="https://webtorrent.io"><img src="logo@400px.png" alt="Lumenaire" width="400"></a>
+  <a href="https://github.com/bencevans/lumenaire"><img src="logo@400px.png" alt="Lumenaire" width="400"></a>
   <br>
 </h1>
 
