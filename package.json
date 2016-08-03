@@ -1,0 +1,33 @@
+{
+  "name": "lumenaire",
+  "version": "0.0.0",
+  "description": "Automagically adjust screen brightness to screen content",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bencevans/lumenaire.git"
+  },
+  "keywords": [
+    "lumen",
+    "light",
+    "brightness",
+    "screen",
+    "content",
+    "adaptive"
+  ],
+  "author": "Ben Evans <ben@bensbit.co.uk> (https://bencevans.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bencevans/lumenaire/issues"
+  },
+  "homepage": "https://github.com/bencevans/lumenaire#readme",
+  "dependencies": {
+    "brightness": "^3.0.0",
+    "pify": "^2.3.0",
+    "pixel-average": "^1.0.0",
+    "screenshot-desktop": "^1.0.0"
+  }
+}
