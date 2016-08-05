@@ -5,12 +5,6 @@ const brightness = require('brightness')
 const ActiveAppWatcher = require('active-app-watcher')
 const activeAppWatcher = new ActiveAppWatcher()
 
-activeAppWatcher.on('change', (a) => {
-  updateBrightness()
-})
-
-activeAppWatcher.start()
-
 function updateBrightness() {
   screenshot()
   .then((img) => {
@@ -29,4 +23,8 @@ function updateBrightness() {
   })
 }
 
-// setInterval(updateBrightness, 500)
+activeAppWatcher.on('change', (a) => {
+  updateBrightness()
+})
+
+activeAppWatcher.start()
