@@ -5,6 +5,10 @@ const brightness = require('brightness')
 const ActiveAppWatcher = require('active-app-watcher')
 const activeAppWatcher = new ActiveAppWatcher()
 
+const minBrightness = 0
+const maxBrightness = 0.4
+
+
 function updateBrightness() {
   screenshot()
   .then((img) => {
@@ -12,7 +16,7 @@ function updateBrightness() {
   })
   .then((avgs) => {
     let imgBrightness = avgs.brightness / 255
-    let newLevel = 0.4 + ((1 - imgBrightness) * 0.6)
+    let newLevel = ((1 - imgBrightness) * (maxBrightness - minBrightness)) - minBrightness
     return brightness.set(newLevel)
   })
   .then(() => {
