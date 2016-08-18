@@ -19,8 +19,13 @@ $ cd lumenaire
 $ npm install
 $ npm start
 
-# Package for Linux
+# Package for specific OS
 $ npm run package-linux
+$ npm run package-darwin
+$ npm run package-win32
+
+# Package for all OSs
+$ npm run package-all
 ```
 
 ## Licence

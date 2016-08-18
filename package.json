@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron main.js",
+    "package-all": "npm run package-linux && npm run package-win32 && npm run package-darwin",
     "package-linux": "electron-packager ./ Lumenaire --platform=linux --arch=x64 --out=build",
-    "package-windows": "electron-packager ./ Lumenaire --platform=windows --arch=x64 --out=build",
+    "package-win32": "electron-packager ./ Lumenaire --platform=win32 --arch=x64 --out=build",
     "package-osx": "electron-packager ./ Lumenaire --platform=osx --arch=x64 --out=build"
   },
   "repository": {
