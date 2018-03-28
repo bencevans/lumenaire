@@ -21,7 +21,7 @@ $ npm start
 
 # Package for specific OS
 $ npm run package-linux
-$ npm run package-darwin
+$ npm run package-osx
 $ npm run package-win32
 
 # Package for all OSs
